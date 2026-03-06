@@ -1,0 +1,491 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lathif Nurma Huda | Creative Developer Portfolio</title>
+
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#121212",
+              accent: "#D4AF37",
+              "background-light": "#f7f7f7",
+              "background-dark": "#0A0A0A",
+            },
+            fontFamily: {
+              display: ["Newsreader", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark text-white font-display selection:bg-accent/30 selection:text-white"
+  >
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/5"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="size-8 bg-accent rounded-full flex items-center justify-center"
+          >
+            <span
+              class="material-symbols-outlined text-primary text-xl font-bold"
+              >signature</span
+            >
+          </div>
+          <span class="text-xl font-bold tracking-tight text-white"
+            >Lathif Nurma Huda</span
+          >
+        </div>
+
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-medium hover:text-accent transition-colors duration-300"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="text-sm font-medium hover:text-accent transition-colors duration-300"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="text-sm font-medium hover:text-accent transition-colors duration-300"
+            href="#skill"
+            >Skill</a
+          >
+          <a
+            class="text-sm font-medium hover:text-accent transition-colors duration-300"
+            href="#project"
+            >Project</a
+          >
+          <a
+            class="text-sm font-medium hover:text-accent transition-colors duration-300"
+            href="#certification"
+            >Certification</a
+          >
+          <a
+            class="text-sm font-medium hover:text-accent transition-colors duration-300"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          class="px-6 py-2.5 bg-accent text-primary text-sm font-bold rounded-lg hover:bg-white transition-all duration-300 transform active:scale-95"
+        >
+          Hire Me
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden"
+        id="home"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full"
+        >
+          <div class="z-10 order-2 lg:order-1">
+            <h1
+              class="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-8"
+            >
+              Hi, I'm
+              <span class="italic font-light gold-gradient-text">Lathif.</span
+              ><br />
+              Data <span class="italic font-light">Analyst.</span>
+            </h1>
+            <p
+              class="text-white/60 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-sans"
+            >
+              Crafting high-end digital experiences with a focus on luxury,
+              minimalism, and strategic storytelling.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-accent hover:text-primary transition-all duration-500 text-base"
+              >
+                View Portfolio
+              </button>
+              <button
+                class="px-8 py-4 border border-white/20 text-white font-bold rounded-xl hover:bg-white/5 transition-all duration-500 text-base"
+              >
+                The Process
+              </button>
+            </div>
+          </div>
+
+          <div class="relative order-1 lg:order-2 flex justify-center">
+            <div class="relative w-full aspect-[4/5] max-w-md">
+              <div
+                class="absolute inset-0 bg-accent/20 rounded-xl translate-x-4 translate-y-4 -z-10"
+              ></div>
+              <div
+                class="w-full h-full rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
+              >
+                <img
+                  alt="Professional Portrait"
+                  class="w-full h-full object-cover"
+                  src="assets/images/fotolathif.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+          class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
+        >
+          <span class="text-[10px] uppercase tracking-[0.3em] text-white/40"
+            >Scroll</span
+          >
+          <div
+            class="w-[1px] h-16 bg-gradient-to-b from-accent to-transparent"
+          ></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="py-32 px-6 bg-primary/30" id="about">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-5">
+              <h2
+                class="text-4xl md:text-5xl font-bold mb-8 italic text-accent"
+              >
+                My Story
+              </h2>
+              <p
+                class="text-xl md:text-2xl leading-relaxed text-white/90 italic font-light mb-6"
+              >
+                "I believe that design is not just how it looks, but the
+                atmosphere it creates and the value it brings to the user."
+                <br /><span class="text-accent text-lg mt-2 inline-block"
+                  >— Lathif Nurma Huda</span
+                >
+              </p>
+            </div>
+
+            <div class="lg:col-span-7 flex flex-col justify-center">
+              <p class="text-white/60 text-lg leading-relaxed mb-12 font-sans">
+                Passionate Data Analyst with expertise in Machine Learning and
+                Data Engineering. I transform complex data into actionable
+                insights through advanced analytics, automation, and interactive
+                visualizations. Certified by Dicoding Indonesia with 13
+                professional certifications in Data Science and Machine
+                Learning.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col gap-3">
+                  <span class="material-symbols-outlined text-accent text-3xl"
+                    >model_training</span
+                  >
+                  <h3 class="text-xl font-bold">
+                    Machine Learning Development
+                  </h3>
+                  <p class="text-sm text-white/40 font-sans">
+                    Membangun model klasifikasi dan prediktif yang akurat
+                    menggunakan teknik Deep Learning serta Hyperparameter
+                    Tuning.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <span class="material-symbols-outlined text-accent text-3xl"
+                    >data_object</span
+                  >
+                  <h3 class="text-xl font-bold">Data Engineering & ETL</h3>
+                  <p class="text-sm text-white/40 font-sans">
+                    Merancang pipeline data otomatis untuk memastikan kualitas
+                    data tetap terjaga sebelum dianalisis.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <span class="material-symbols-outlined text-accent text-3xl"
+                    >analytics</span
+                  >
+                  <h3 class="text-xl font-bold">Advanced Analytics</h3>
+                  <p class="text-sm text-white/40 font-sans">
+                    Mengubah data kompleks menjadi wawasan visual yang
+                    interaktif menggunakan Streamlit dan Python.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Gallery -->
+      <section class="py-32 px-6" id="project">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex justify-between items-end mb-16">
+            <div>
+              <span
+                class="text-accent uppercase tracking-[0.3em] text-xs font-bold mb-4 block"
+                >Portfolio</span
+              >
+              <h2 class="text-5xl md:text-6xl font-bold">Selected Work</h2>
+            </div>
+            <a
+              class="hidden md:flex items-center gap-2 group text-white/60 hover:text-accent transition-colors font-sans text-sm tracking-widest uppercase"
+              href="#"
+            >
+              View All Projects
+              <span
+                class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-12"
+            id="portfolio-grid"
+          >
+            <!-- Portfolio items will be loaded by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill Section -->
+      <section class="py-32 px-6 bg-[#0F0F0F]" id="skill">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-24">
+            <span
+              class="text-accent uppercase tracking-[0.3em] text-xs font-bold mb-4 block"
+              >Expertise</span
+            >
+            <h2 class="text-5xl md:text-6xl font-bold italic">My Skills</h2>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 rounded-xl overflow-hidden"
+          >
+            <div
+              class="p-12 hover:bg-white/5 transition-all duration-500 group border-b md:border-b-0 md:border-r border-white/10"
+            >
+              <span
+                class="material-symbols-outlined text-5xl text-accent mb-8 group-hover:scale-110 transition-transform block"
+                >analytics</span
+              >
+              <h3 class="text-2xl font-bold mb-4 italic">
+                Data Analysis & Visualization
+              </h3>
+              <p class="text-white/40 font-sans leading-relaxed">
+                Transforming raw data into actionable insights using Python,
+                Pandas, and interactive dashboards with Streamlit.
+              </p>
+            </div>
+
+            <div
+              class="p-12 hover:bg-white/5 transition-all duration-500 group border-b md:border-b-0 md:border-r border-white/10"
+            >
+              <span
+                class="material-symbols-outlined text-5xl text-accent mb-8 group-hover:scale-110 transition-transform block"
+                >psychology</span
+              >
+              <h3 class="text-2xl font-bold mb-4 italic">
+                Machine Learning & AI
+              </h3>
+              <p class="text-white/40 font-sans leading-relaxed">
+                Building predictive models, recommendation systems, and deep
+                learning solutions for complex data problems.
+              </p>
+            </div>
+
+            <div
+              class="p-12 hover:bg-white/5 transition-all duration-500 group"
+            >
+              <span
+                class="material-symbols-outlined text-5xl text-accent mb-8 group-hover:scale-110 transition-transform block"
+                >storage</span
+              >
+              <h3 class="text-2xl font-bold mb-4 italic">Data Engineering</h3>
+              <p class="text-white/40 font-sans leading-relaxed">
+                Designing ETL pipelines, database management with SQL, and
+                ensuring data quality for analytics workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certification Section -->
+      <section class="py-32 px-6" id="certification">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <span
+              class="text-accent uppercase tracking-[0.3em] text-xs font-bold mb-4 block"
+              >Achievements</span
+            >
+            <h2 class="text-5xl md:text-6xl font-bold italic">
+              Certifications
+            </h2>
+            <p class="text-white/60 text-lg mt-4 max-w-2xl mx-auto">
+              Professional certifications and achievements that showcase my
+              expertise and continuous learning.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            id="certification-grid"
+          >
+            <!-- Certification cards will be loaded by JavaScript -->
+            <!-- Example static card (you can remove this after adding data) -->
+            <div
+              class="bg-[#0F0F0F] rounded-xl p-6 border border-white/10 hover:border-accent/50 transition-all duration-300 group cursor-pointer"
+            >
+              <div class="flex items-start justify-between mb-4">
+                <span class="material-symbols-outlined text-accent text-4xl"
+                  >workspace_premium</span
+                >
+                <span class="text-xs text-white/40 uppercase tracking-wider"
+                  >2024</span
+                >
+              </div>
+              <h3
+                class="text-xl font-bold mb-2 group-hover:text-accent transition-colors"
+              >
+                Certificate Name
+              </h3>
+              <p class="text-white/60 text-sm mb-4">Issuing Organization</p>
+              <a
+                href="assets/certificates/certificate-example.pdf"
+                target="_blank"
+                class="inline-flex items-center gap-2 text-accent text-sm font-medium hover:gap-3 transition-all"
+              >
+                View Certificate
+                <span class="material-symbols-outlined text-lg"
+                  >open_in_new</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="py-32 px-6 relative overflow-hidden" id="contact">
+        <div
+          class="absolute inset-0 -z-10 bg-accent/5 blur-[120px] rounded-full scale-150 translate-y-1/2"
+        ></div>
+        <div class="max-w-7xl mx-auto text-center">
+          <h2
+            class="text-7xl md:text-9xl font-bold italic mb-12 gold-gradient-text tracking-tighter"
+          >
+            Let's Talk.
+          </h2>
+          <p
+            class="text-xl md:text-2xl text-white/60 font-sans mb-16 max-w-2xl mx-auto"
+          >
+            Currently accepting new projects and creative collaborations. If you
+            have an idea, let's bring it to life together.
+          </p>
+          <a
+            class="text-3xl md:text-5xl font-light hover:text-accent transition-colors duration-500 flex items-center justify-center gap-4 group"
+            href="mailto:hudalathif@gmail.com"
+          >
+            <span
+              class="__cf_email__"
+              data-cfemail="ee869b8a8f828f9a868788ae89838f8782c08d8183"
+              >[hudalathif@gmail.com]</span
+            >
+            <span
+              class="material-symbols-outlined text-4xl group-hover:translate-x-4 transition-transform duration-500"
+              >arrow_forward</span
+            >
+          </a>
+          <div
+            class="mt-32 pt-16 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 font-sans text-sm tracking-widest uppercase"
+          >
+            <div class="flex gap-8">
+              <a
+                class="hover:text-accent transition-colors"
+                href="https://www.instagram.com/lathifhuda?igsh=cDloY2RxaWdwZzJx"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+              <a
+                class="hover:text-accent transition-colors"
+                href="https://www.linkedin.com/in/lathif-nurma-huda/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="hover:text-accent transition-colors"
+                href="https://github.com/lathifhuda"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+            <p class="text-white/20">
+              © 2026 Lathif Nurma Huda. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating UI Helper (CTA) -->
+    <div class="fixed bottom-8 right-8 z-40 hidden md:block">
+      <a href="mailto:hudalathif@gmail.com">
+        <button
+          class="size-14 bg-white text-primary rounded-full flex items-center justify-center shadow-2xl hover:bg-accent hover:rotate-12 transition-all duration-500 group"
+        >
+          <span
+            class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform"
+            >mail</span
+          >
+        </button>
+      </a>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/certification-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
